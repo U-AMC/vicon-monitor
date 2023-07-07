@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<launch>
+  <!-- define base frame as vicon world, and pose frame as segment. change parameters to track different segments -->
+    <arg name="base_frame" default="vicon/world"/>
+    <arg name="pose_frame" default="vicon/kobukki_0/kobukki_0"/>
+
+    <!-- sudo frame over vicon, and SLAM frame. Connects SLAM frame and vicon frame with R,t param -->
+    <arg name="sudo_frame" default="sudo"/>
+    <arg name="map_frame" default="map"/>
+    <!-- pose publish node topic name -->
+    <arg name="pose_from_tf" default="pub_pose_from_tf"/>
+
+    <node pkg="vicon_calibrator" type="publish_pose_from_tf.py" name="$(arg pose_from_tf)" output="screen" >
+        <param name="~base_frame" value="$(arg base_frame)"/>
+        <param name="~pose_frame" value="$(arg pose_frame)"/>
+	</node>
+    <!-- launch vicon calibrator node -->
+    <node pkg="vicon_calibrator" type="vicon_tf.py" name="vicon_tf" output="screen" >
+        <param name="~base_frame" value="$(arg base_frame)"/>
+        <param name="~pose_frame" value="$(arg pose_frame)"/>
+        <param name="~pose_from_tf" value="$(arg pose_from_tf)"/>
+        <param name="~sudo_frame" value="$(arg sudo_frame)"/>
+        <param name="~map_frame" value="$(arg map_frame)"/>
+	</node>
+
+</launch>
