@@ -17,7 +17,7 @@ TODO
 
 
 
-#Acknowledgement
+Acknowledgement
 ---------------------------
 [Vicon Bridge](https://github.com/ethz-asl/vicon_bridge)
 
