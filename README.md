@@ -1,9 +1,11 @@
 # vicon-monitor
 This package is an extension utilizing vicon bridge to snatch its ROS Tf data to use Vicon Motion Capture system as GT for inddor Spatial Data Processing and evaluation. 
+
 **Vicon Monitor requires Vicon bridge together in ROS workspace. Check the Acknowledgement** 
 
 
-You can collaborate this package to record bag, or monitor Robot / Agent 's odometry in real-time
+You can collaborate this package to record bag, or monitor Robot / Agent 's odometry in real-time.
+
 This package publishes the following ROS topics
   1. Odometry (nav_msgs)
   2. Pose (nav_msgs)
