@@ -25,4 +25,4 @@ TODO
 
 [rigid transform 3D](https://github.com/nghiaho12/rigid_transform_3D)
 
-
+**Matlab/Octave/Python implementation of the rigid 3D transform algorithm** 
