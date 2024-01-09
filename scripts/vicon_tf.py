@@ -30,7 +30,7 @@ class VT:
         # self.sub_odom = rospy.Subscriber(vins_topic, Odometry, self.odometryCb)
 
         self.tf_buffer = tf2_ros.Buffer()
-        self.transformer = tf.TransformListener(self.tf_buffer)
+        self.transformer = tf2_ros.TransformListener(self.tf_buffer)
 
         # arguments
         self.base_frame = rospy.get_param('~base_frame')
@@ -52,8 +52,8 @@ class VT:
         rate = rospy.Rate(10)
         while not rospy.is_shutdown():
             try:
-                self.transformer.waitForTransform(self.base_frame,self.pose_frame, rospy.Time.now(), rospy.Duration(0.1))
-                transform = self.tf_buffer.lookup_transform(self.base_frame,self.pose_frame,rospy.Time.now(), rospy.Duration(1.0)) #rot is quaternion, trans is xyz vector ([x, y, z], [x, y, z, w])
+                # self.transformer.waitForTransform(self.base_frame,self.pose_frame, rospy.Time.now(), rospy.Duration(0.1))
+                transform = self.tf_buffer.lookup_transform(self.base_frame,self.pose_frame,rospy.Time.now(), rospy.Duration(0.1)) #rot is quaternion, trans is xyz vector ([x, y, z], [x, y, z, w])
                 #pose
                 x_t = transform.transform.translation.x
                 y_t = transform.transform.translation.y
