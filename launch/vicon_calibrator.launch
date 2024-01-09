@@ -14,7 +14,7 @@
   <!-- pose publish node topic name -->
   <arg name="pose_from_tf" default="tf_to_pose" />
   <!-- IP and port on Vicon Windows PC -->
-  <arg name="datastream_hostport" default="192.168.0.173:801" />
+  <arg name="datastream_hostport" default="your_local_ip_address:801" />
   <!-- Fixed vicon world frame -->
   <arg name="vicon_world_frame" default="/vicon/world" />
 
