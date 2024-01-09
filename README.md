@@ -19,6 +19,9 @@ TODO
 
 #Acknowledgement
 ---------------------------
-https://github.com/ethz-asl/vicon_bridge
-
+[Vicon Bridge](https://github.com/ethz-asl/vicon_bridge)
 **Vicon Bridge is a driver providing data from VICON motion capture systems. It is based on the vicon_mocap package from the starmac stacks.**
+
+[rigid transform 3D]([https://github.com/ethz-asl/vicon_bridge](https://github.com/nghiaho12/rigid_transform_3D)https://github.com/nghiaho12/rigid_transform_3D)
+
+
