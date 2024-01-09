@@ -9,7 +9,6 @@ This package publishes the following ROS topics
   4. Custom TF (to connect your SLAM/base_link frame for real-time monitoring)
 
 # How to use
---------------------------
 TODO
 
 **Vicon Monitor requires Vicon bridge together in ROS workspace. Check the Acknowledgement** 
