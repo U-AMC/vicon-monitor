@@ -1,5 +1,5 @@
 # vicon-calibrator
-This package is an extension utilizing vicon bridge to snatch its ROS Tf data to use vicon as GT
+This package is an extension utilizing vicon bridge to snatch its ROS Tf data to use Vicon Motion Capture system as GT for inddor Spatial Data Processing and evaluation. 
 
 **Vicon Monitor requires Vicon bridge together in ROS workspace** 
 
