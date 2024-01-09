@@ -4,7 +4,7 @@ This package is an extension utilizing vicon bridge to snatch its ROS Tf data to
 **Vicon Monitor requires Vicon bridge together in ROS workspace. Check the Acknowledgement** 
 
  <p align='center'>
-      <img src="./examples/loc-2024-01-09_15.05.36-ezgif.com-video-to-gif-converter.gif" alt="drawing" width="800" height = "400"/>
+      <img src="./example/loc-2024-01-09_15.05.36-ezgif.com-video-to-gif-converter.gif" alt="drawing" width="800" height = "400"/>
   </p>
 
 You can collaborate this package to record bag, or monitor Robot / Agent 's odometry in real-time.
