@@ -7,5 +7,5 @@ This package is an extension utilizing vicon bridge to snatch its ROS Tf data to
 
 #Acknowledgement
 ---------------------------
-## https://github.com/ethz-asl/vicon_bridge
-** Vicon Bridge is a driver providing data from VICON motion capture systems. It is based on the vicon_mocap package from the starmac stacks. **
+https://github.com/ethz-asl/vicon_bridge
+**Vicon Bridge is a driver providing data from VICON motion capture systems. It is based on the vicon_mocap package from the starmac stacks.**
